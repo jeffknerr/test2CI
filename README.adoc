@@ -1,0 +1,46 @@
+:lang: en
+:xrefstyle: short
+:leveloffset: +1
+:toc: left
+:title: Test Training Guide
+:Author: Jeff Knerr 
+:Email:  <knerr@cs.swarthmore.edu>
+:Author Initials: JMK
+:Date:    2021-06-21
+:Revision: 0.1
+
+= {title}
+
+This is the start of my _test asciidoc guide_.
+
+Here's a cheat sheet on asciidoc formatting:
+https://powerman.name/doc/asciidoc
+
+And here's a nice writer's guide:
+https://asciidoctor.org/docs/asciidoc-writers-guide
+
+Examples of using the `host` and `ping` commands:
+
+----
+$ host curry
+curry.cs.swarthmore.edu has address 130.58.68.36
+curry.cs.swarthmore.edu mail is handled by 0 cs.swarthmore.edu.
+
+$ host 130.58.68.36
+36.68.58.130.in-addr.arpa domain name pointer curry.cs.swarthmore.edu.
+
+$ host www.swarthmore.edu
+www.swarthmore.edu has address 130.58.11.25
+
+$ ping www.swarthmore.edu
+PING www.swarthmore.edu (130.58.11.25) 56(84) bytes of data.
+64 bytes from www.swarthmore.edu (130.58.11.25): icmp_seq=1 ttl=252 time=1.39 ms
+64 bytes from www.swarthmore.edu (130.58.11.25): icmp_seq=2 ttl=252 time=1.54 ms
+64 bytes from www.swarthmore.edu (130.58.11.25): icmp_seq=3 ttl=252 time=1.47 ms
+^C
+--- www.swarthmore.edu ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 1.399/1.475/1.548/0.060 ms
+----
+
+include::text.adoc[]
