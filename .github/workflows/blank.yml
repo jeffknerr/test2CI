@@ -24,11 +24,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-    - name: asciidoctor-ghpages
-      uses: manoelcampos/asciidoctor-ghpages-action@v2
-      with:
-        asciidoctor_params: --attribute=nofooter
-        pdf_build: true
+      - name: asciidoctor-ghpages
+        uses: manoelcampos/asciidoctor-ghpages-action@v2
+        with:
+          asciidoctor_params: --attribute=nofooter
+          pdf_build: true
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
